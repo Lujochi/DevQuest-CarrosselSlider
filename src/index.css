@@ -1,0 +1,108 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.images-slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.images-slider .slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.images-slider .slide.show {
+  opacity: 1;
+}
+
+.slide-pink {
+  background-image: url(../src/img/img1.png);
+}
+.slide-green {
+  background-image: url(../src/img/img2.png);
+}
+.slide-orange {
+  background-image: url(../src/img/img3.png);
+}
+.slide-blue {
+  background-image: url(../src/img/img4.png);
+}
+
+.arrow-previous,
+.arrow-next {
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow-previous {
+  left: 4%;
+}
+
+.arrow-next {
+  right: 4%;
+}
+
+.Low-opacity {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.content {
+  background-color: #fff;
+  margin-left: 180px;
+  padding: 65px 60px;
+  width: 620px;
+  border-radius: 10px;
+}
+
+.content .title {
+  margin-bottom: 80px;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.content .text {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.content .btn-know-more {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.btn-know-more.c-pink {
+  color: #c50000;
+}
+
+.btn-know-more.c-green {
+  color: #d9dd10;
+}
+
+.btn-know-more.c-orange {
+  color: #a63a17;
+}
+
+.btn-know-more.c-blue {
+  color: #10acdd;
+}
