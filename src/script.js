@@ -17,7 +17,7 @@ btnNext.addEventListener("click", () => {
 });
 
 btnPrevious.addEventListener("click", () => {
-  if (imageCurrent === slideList.length - 4) {
+  if (imageCurrent === 0) {
     return;
   }
 
